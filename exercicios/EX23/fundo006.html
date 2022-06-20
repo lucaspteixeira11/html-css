@@ -7,16 +7,22 @@
     <title>Document</title>
     <style>
         body{
-            height: 100vh;
-            background-color: black;
+            /* background-color: black;
             background-image: url("imagens/wallpaper002.jpg");
             background-position: center center;
             background-repeat: no-repeat;
-            background-size: auto; /*Por padrão é utilizado o auto, porém pode-se utilizar o contain (100% da imagem se adaptando na tela sem cortar, fazendo black bars) ou cover (Faz cortes porém vai preencher a tela inteira)*/
+            background-size: auto; 
+            background-attachment: fixed; */
+            /*Shorthand-BG
+            color > image > position > repeat > [size] > attachment
+            */
+            height: 100vh;
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+            background-size: cover; /*Por padrão é utilizado o auto, porém pode-se utilizar o contain (100% da imagem se adaptando na tela sem cortar, fazendo black bars) ou cover (Faz cortes porém vai preencher a tela inteira)*/
         }
         main{
             background-color: white;
-            width: 400px;
+            max-width: 700px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
